@@ -43,8 +43,8 @@ export default {
 
 .header {
   background-color: #0ea5da;
-  height: 17rem;
-  padding-bottom: 3rem;
+  height: 15rem;
+  padding-bottom: 2rem;
 
   display: grid;
   justify-items: center;
