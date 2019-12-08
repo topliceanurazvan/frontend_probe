@@ -12,6 +12,7 @@
     </div>
     <div class="main">
       <login-form />
+      <header-info />
     </div>
     <Footer />
   </div>
@@ -20,6 +21,7 @@
 <script>
 import Navbar from "./components/Navbar.vue";
 import LoginForm from "./components/LoginForm.vue";
+import HeaderInfo from "./components/HeaderInfo.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -27,6 +29,7 @@ export default {
   components: {
     Navbar,
     LoginForm,
+    HeaderInfo,
     Footer
   }
 };
@@ -65,6 +68,8 @@ h1 {
 
 .main {
   display: grid;
+  grid-template-columns: 30rem 23rem;
+  grid-column-gap: 3rem;
   justify-content: center;
   justify-items: center;
 

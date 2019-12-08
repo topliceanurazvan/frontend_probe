@@ -48,6 +48,7 @@ export default {
   background-color: #0980ab;
   height: 15.5rem;
   width: 100%;
+  padding: 2.2rem;
 
   display: grid;
   grid-template-columns: repeat(4, 15rem);
