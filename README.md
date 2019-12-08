@@ -24,6 +24,6 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-Descriere :
+### Description
 
 For this project I used Vue.js with CSS, SCSS and Buefy(used only for the form input validation). I enjoy using pure CSS3 which gives me the freedom to have 100% control over the project.
