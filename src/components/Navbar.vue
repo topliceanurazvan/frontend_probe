@@ -10,13 +10,15 @@ export default {};
 
 <style lang="scss" scoped>
 .navbar {
-  height: 8rem;
-  padding-left: 25rem;
+  height: 5rem;
+  padding-left: 18rem;
+
+  display: flex;
+  align-items: center;
 }
 
 img {
-  width: 8.5rem;
-  height: 3.7rem;
-  margin: auto 0;
+  width: 6rem;
+  height: 2.5rem;
 }
 </style>
