@@ -65,6 +65,15 @@ export default {
   }
 }
 
+.fa-life-ring {
+  color: #000;
+  font-size: 3.5rem;
+}
+
+a {
+  color: #0ea5da;
+}
+
 p {
   font-size: 0.9rem;
 }
@@ -74,18 +83,23 @@ span {
   display: block;
 }
 
-a {
-  color: #0ea5da;
-}
-
 i {
   font-size: 2rem;
   display: inline-block;
   color: #0ea5da;
 }
 
-.fa-life-ring {
-  color: #000;
-  font-size: 3.5rem;
+@media only screen and (max-width: 950px) {
+  .header-info {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .header-info {
+    grid-template-columns: 70%;
+    justify-content: center;
+    justify-items: center;
+  }
 }
 </style>

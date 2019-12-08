@@ -40,7 +40,7 @@ export default {};
 .login {
   height: 90%;
   background-color: #fff;
-  padding: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
 
   &-form {
@@ -61,7 +61,7 @@ export default {};
   border-radius: 50%;
   padding: 1.3rem;
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.3);
-  transform: translateY(-70%) translateX(10rem);
+  transform: translateY(-70%) translateX(170%);
 }
 
 button {
@@ -81,5 +81,21 @@ button {
 
 button:hover {
   letter-spacing: 0.15rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .login {
+    height: 65%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .login {
+    height: 100%;
+  }
+
+  .far {
+    transform: translateY(-70%) translateX(200%);
+  }
 }
 </style>

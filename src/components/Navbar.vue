@@ -11,7 +11,7 @@ export default {};
 <style lang="scss" scoped>
 .navbar {
   height: 5rem;
-  padding-left: 18rem;
+  padding-left: 20%;
 
   display: flex;
   align-items: center;

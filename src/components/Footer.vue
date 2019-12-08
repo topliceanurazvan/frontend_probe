@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div>
+    <div class="footer-title">
       <h2>hubgets</h2>
       <i class="fas fa-comments"></i>
     </div>
@@ -18,7 +18,7 @@
         ><i :class="link.icon"></i>{{ link.text }}</a
       >
     </div>
-    <p>&copy; Copyrights 2015 Hubgets, Inc</p>
+    <p class="copyright">&copy; Copyrights 2015 Hubgets, Inc</p>
   </div>
 </template>
 
@@ -46,7 +46,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   background-color: #0980ab;
-  height: 15.5rem;
+
   width: 100%;
   padding: 2.2rem;
 
@@ -54,21 +54,6 @@ export default {
   grid-template-columns: repeat(4, 15rem);
   grid-row-gap: 1rem;
   justify-content: center;
-}
-
-h2 {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.2rem;
-  display: inline-block;
-  margin-right: 0.7rem;
-}
-
-h3 {
-  color: #fff;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 0.7rem;
 }
 
 .fas {
@@ -90,12 +75,48 @@ a {
   margin-bottom: 0.4rem;
 }
 
+a:hover {
+  color: #fff;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+h3 {
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
 p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.7rem;
 }
 
-a:hover {
-  color: #fff;
+@media only screen and (max-width: 720px) {
+  .footer {
+    grid-template-columns: repeat(3, 15rem);
+
+    &-title {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    grid-template-columns: repeat(2, 15rem);
+    justify-items: center;
+  }
+
+  .copyright {
+    grid-column: 1 / 3;
+  }
 }
 </style>

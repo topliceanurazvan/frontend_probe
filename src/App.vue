@@ -59,13 +59,6 @@ export default {
   }
 }
 
-h1 {
-  color: #fff;
-  font-size: 2rem !important;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
 .main {
   display: grid;
   grid-template-columns: 30rem 23rem;
@@ -77,14 +70,33 @@ h1 {
   height: 30rem;
 }
 
+h1 {
+  color: #fff;
+  font-size: 2rem !important;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 950px) {
   html {
     font-size: 75% !important;
+  }
+
+  .main {
+    height: 44rem;
   }
 }
 @media only screen and (min-width: 1700px) {
   html {
     font-size: 125% !important;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-row-gap: 6rem;
+    height: 50rem;
   }
 }
 </style>
